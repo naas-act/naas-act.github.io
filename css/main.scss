@@ -48,8 +48,8 @@ body {
 
   h1 {
       color: #fff;
-      font-size: 52px;
-      font-family: serif;
+      // font-size: 52px;
+      // font-family: serif;
   }
   // background-attachment: fixed;
   background-size: cover;
@@ -61,6 +61,7 @@ body {
 }
 .page-content {
   padding-bottom: 20px;
+  font-size: 16px;
 }
 .footer {
   position: absolute;
