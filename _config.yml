@@ -1,14 +1,13 @@
 # Site settings
-title: Jekyll Doc Theme
-email: your-email@domain.com
+title: NAAS
+email: naasflying@gmail.com
 description: >
-  Jekyll Template for Project Websites
-  providing documentation and blog post pages.
+  National Aeromodelling & Aviators Society
 
-baseurl: "/jekyll-doc-theme" # the subpath of your site, e.g. /blog/
-url: https://aksakalli.github.io/jekyll-doc-theme # the base hostname & protocol for your site
-git_address: https://github.com/aksakalli/jekyll-doc-theme
-git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: https://naas-act.github.io/ # the base hostname & protocol for your site
+# git_address: https://github.com/aksakalli/jekyll-doc-theme
+# git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
@@ -27,9 +26,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .idea/
+  - .ignore/
+  - .attic/
   - .gitignore
   - README.md
-timezone: Europe/Berlin
+timezone: Sydney/Australia
 defaults:
 - scope:
     path: _posts
