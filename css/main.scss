@@ -42,16 +42,19 @@ body {
 
 .header-container {
   background-color: black;
-  background: url('../img/bg.jpg') no-repeat 50% 0;
+  background: url('../img/bg.jpg') no-repeat 100% 0;
   color: #fff;
+  font-family: sans-serif;
 
   h1 {
-    color: #fff;
+      color: #fff;
+      font-size: 52px;
+      font-family: serif;
   }
   // background-attachment: fixed;
   background-size: cover;
-  background-position: center 36%;
-  margin-top: -37px;
+  background-position: center 50%;
+  margin-top: -57px;
 }
 .navbar-container {
   font-size: 16px;
