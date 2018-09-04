@@ -1,0 +1,10 @@
+- title: Events
+  url: /pages/events/
+- title: Club
+  url: /pages/club/
+  sublinks:
+    - title: Location
+      url: /pages/club/location/
+    - title: Contact
+      url: /pages/club/contact/
+      

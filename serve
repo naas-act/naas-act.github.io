@@ -1,0 +1,4 @@
+#! /bin/sh
+
+bundle-2.5 exec jekyll serve --watch
+#
