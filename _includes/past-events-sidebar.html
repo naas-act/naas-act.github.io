@@ -1,0 +1,29 @@
+
+<div class="sidebar">
+
+  <!-- From static_pages with url of the form "/events/past/SOME_EVENT" -->
+  <!-- get the list of all past events and sort them -->
+  {% assign past_events = "" | split: ' ' %} <!-- Dummy to get empty array -->
+  {% for p in site.html_pages %}
+  {% assign p_elems = p.url | split: '/' %}
+  {% if p_elems.size == 3 and p_elems[1] == "past-events" %}
+  {% assign past_events = past_events | push: p %}
+  {% endif %}
+  {% endfor %}
+  {% assign past_events_sorted = past_events | sort: 'date' | reverse %}
+
+  <h4>PAST EVENTS</h4>
+  <ul class="list-unstyled post-list-container">
+  {% for p in past_events_sorted %}
+  <li>
+    <span>
+    <a href="{{ p.url }}" {% if p.title == page.title %} class="active" {% endif %}>{{ p.title }}</a>
+    <time class="pull-right">
+      {{ p.date | date: "%b %Y" }}
+    </time>
+    </span>
+  </li>
+  {% endfor %}
+  </ul>
+ 
+</div>

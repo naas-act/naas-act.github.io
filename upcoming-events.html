@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      {% include classify-news.html %}
+      {% if next_event_post %}
+      <article class="post">
+	<h1 class="post-title">{{ next_event_post.title }}</h1>
+	<h4 class="post-date">
+	  Event date: {{ next_event_post.date | date: "%b %-d, %Y" }}
+	</h4>
+	{{ next_event_post.content }}
+      </article>
+      {% else %}
+      <h3> No upcoming events</h3>
+      {% endif %}
+    </div>
+    <div class="col-md-4">
+	{% include news-sidebar.html %}
+    </div>
+  </div>
+</div>

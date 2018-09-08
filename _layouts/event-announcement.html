@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <article class="post">
+	<h1 class="post-title">{{ page.title }}</h1>
+	<h4 class="post-date">
+	  Event date: {{ page.date | date: "%b %-d, %Y" }}
+	</h4>
+	{{ content }}
+      </article>
+    </div>
+    <div class="col-md-4">
+	{% include news-sidebar.html %}
+    </div>
+  </div>
+</div>
+
