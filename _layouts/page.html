@@ -3,17 +3,11 @@ layout: default
 ---
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-8">
+  <!-- <div class="row"> -->
+  <!--   <div class="col-md-8"> -->
       <h1>{{ page.title }}</h1>
-      <div id="markdown-content-container">{{ content }}</div>
-    </div>
-  </div>
-
-  <!-- <div class="row"> -->
-  <!--   {% include sitemap.html map=site.data.menu %} -->
-  <!--   </div> -->
-  <!-- <div class="row"> -->
-  <!--   {% include dynamic.html %} -->
-  <!--   </div> -->
+      {{ content }}
+      <!-- <div class="container">{{ content }}</div> -->
+      <!-- <div id="markdown-content-container">{{ content }}</div> -->
+      <!--   </div> -->
 </div>

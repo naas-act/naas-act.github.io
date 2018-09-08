@@ -12,15 +12,7 @@
             </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-	  {% include makemenu.html %}
-	  <!--         <ul class="nav navbar-nav"> -->
-    <!-- 	      {% for item in include.nav %} <li> -->
-    <!-- 		<a href="{{item.url }}"> {{ item.text }} </a> -->
-    <!-- 	      </li> -->
-    <!-- 	      {% endfor %} -->
-    <!-- <\!-- <li {% if page.sectionid=='docs' %} class="active" {% endif %}><a href="{{ "/docs/home/" | prepend: site.baseurl }}">Docs</a></li> -\-> -->
-    <!--             <\!-- <li {% if page.sectionid=='blog' %} class="active" {% endif %}><a href="{{ site.posts.first.url | prepend: site.baseurl }}">Blog</a></li> -\-> -->
-    <!--         </ul> -->
+	  {% include topnav-inner.html %}
             <div class="navbar-right">
                 <form class="navbar-form navbar-left">
                     <div class="form-group has-feedback">

@@ -1,14 +1,14 @@
 - title: Events
   sublinks:
     - title: Upcoming Events
-      url: /events/upcoming-events/index.html
+      url: /upcoming-events.html
     - title: Past Events
-      url: /events/past-events/index.html
+      url: /past-events/index.html
 - title: Club
   sublinks:
     - title: Location
       url: /club/location.html
     - title: Contact
       url: /club/contact.html
-- title: Posts
-  url: /posts.html
+- title: Announcements
+  url: /news.html

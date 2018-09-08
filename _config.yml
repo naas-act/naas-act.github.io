@@ -12,8 +12,10 @@ url: https://naas-act.github.io/ # the base hostname & protocol for your site
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap
 # bootwatch: paper
+# bootwatch: paper-mod
 # bootwatch: cerulean
 bootwatch: cerulean-mod
+# bootwatch: spacelab
 
 # Build settings
 markdown: kramdown
@@ -33,6 +35,7 @@ exclude:
   - .gitignore
   - README.md
 timezone: Sydney/Australia
+future: true
 
 defaults:
 
@@ -44,21 +47,31 @@ defaults:
     sectionid: blog
 
 - scope:
-    path: ""
+    path: _event-announcements
+    type: event-announcements
   values:
-    layout: page
+    layout: event-announcement
 
 - scope:
-    path: events/past-events
+    path: past-events
   values:
     layout: past-event
 
 - scope:
-    path: events/upcoming-events
+    path: ""
   values:
     layout: page
 
 collections:
   posts:
-    permalink: /blog/:year/:month/:day/:title/
     output: true
+    permalink: /news/:path/
+  event-announcements:
+    output: true
+    permalink: /event-announcements/:path/
+
+plugins_dir:
+  - jekyll-youtube
+
+# plugins:
+#   - jekyll-maps

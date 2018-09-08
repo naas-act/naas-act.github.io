@@ -3,21 +3,38 @@ layout: default
 ---
 <div class="container">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-9">
       <h1>{{ page.title }}</h1>
-      <p>{{ page.date | date: "%b %-d, %Y" }}</p>
+      <h4>{{ page.date | date: "%b %-d, %Y" }}</h4>
       <div id="markdown-content-container">{{ content }}</div>
+      {% if page.youtubeurl %}
+      <h2>Video</h2>
+      {% youtube page.youtubeurl %}
+      {% endif %}
+
+      <!-- Get in imgs_list a list of the names of all jpg files in the img subdirectory -->
+      {% assign img_dir = page.url | append: 'img/' %}
+      {% capture imgs_list_text %}
+      {% for file in site.static_files %}
+      {% assign ext = file.extname | downcase %}
+      {% if file.path contains img_dir and ext == ".jpg" %}
+      {{ file.path }}
+      {% endif %}
+      {% endfor %}
+      {% endcapture %}
+      {% assign imgs_list = imgs_list_text | split: ' ' %}
+
+      {% if imgs_list.size > 0 %}
+      <h2>Photo Gallery</h2>
+      {% for file_name in imgs_list %}
+      <img src="{{ file_name }}" alt="image" />
+      {% endfor %}
+      {% endif %}
+    </div>
+    <div class="col-md-3">
+      {% include past-events-sidebar.html %}
     </div>
   </div>
-
-<h2>Photos</h2>
-{% assign img_dir = page.url | append: 'img/' %}
-  {% for file in site.static_files %}
-  {% assign ext = file.extname | downcase %}
-  {% if file.path contains img_dir and ext == ".jpg" %}
-    <img src="{{ file.path }}" alt="image" />
-  {% endif %}
-  {% endfor %}
 </div>
 
 
