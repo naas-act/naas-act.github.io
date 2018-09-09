@@ -1,0 +1,10 @@
+  <!-- From static_pages with url of the form "/events/past/SOME_EVENT" -->
+  <!-- get the list of all past events and sort them -->
+  {% assign past_events = "" | split: ' ' %} <!-- Dummy to get empty array -->
+  {% for p in site.html_pages %}
+  {% assign p_elems = p.url | split: '/' %}
+  {% if p_elems.size == 3 and p_elems[1] == "past-events" %}
+  {% assign past_events = past_events | push: p %}
+  {% endif %}
+  {% endfor %}
+  {% assign past_events_sorted = past_events | sort: 'date' | reverse %}
