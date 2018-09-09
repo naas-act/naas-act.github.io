@@ -1,5 +1,5 @@
 ---
-title: "National Electric Flight Rally"
+title: National Electric Flight Rally
 date: 31-3-2018
 youtube-id: Clvp_DC0jyk
 ---

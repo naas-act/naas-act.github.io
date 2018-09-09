@@ -11,10 +11,14 @@ layout: default
       <article class="post">
 	<h1 class="post-title">{{ next_event_post.title }}</h1>
 	<h4 class="post-date">
-	  Event date: {{ next_event_post.date | date: "%b %-d, %Y" }}
+	  {{ next_event_post.date | date: "%b %-d, %Y" }}
+	  {% if next_event_post.end-date %} - {{ next_event_post.end-date | date: "%b %-d, %Y" }} {% endif %}
 	</h4>
 	{{ next_event_post.content }}
       </article>
+      {% if next_event_post.flyer %}
+      <img src="{{ next_event_post.flyer }}" alt="Flyer" class="img-responsive">
+      {% endif %}
       {% else %}
       <h3> No upcoming events</h3>
       {% endif %}
@@ -24,11 +28,4 @@ layout: default
     </div>
   </div>
 
-  {% if next_event_post.flyer %}
-  <div class="row">
-    <div class="col-md-12">
-      <img src="{{ next_event_post.flyer }}" alt="Flyer" class="img-responsive">
-    </div>
-  </div>
-  {% endif %}
 </div>
