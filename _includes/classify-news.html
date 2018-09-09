@@ -1,8 +1,6 @@
 {% assign now_epoch = "now" | date: "%s" %}
-<!-- {% assign now_epoch = "2018-09-09 23:55:00" | date: "%s" %} -->
 {% assign future_event_news = "" | split: ' ' %}
 {% assign past_event_news = "" | split: ' ' %}
-{% assign non_event_news = "" | split: ' ' %}
 {% for post in site.event-announcements  %}
 {% assign event_date_epoch = post.date | date: "%s" %}
 {% if event_date_epoch >= now_epoch %}
@@ -11,13 +9,8 @@
 {% assign past_event_news = past_event_news | push: post %}
 {% endif %}
 {% endfor %}
-{% assign future_event_news = future_event_news | sortby: "date" | reverse %}
+{% assign future_event_news = future_event_news | sortby: "date" %}
 {% assign past_event_news = past_event_news | sortby: "date" | reverse %}
-
-{% assign next_event_post = nil %}
-{% if future_event_news.size > 0 %}
-{% assign last_index = future_event_news.size | minus: 1 %}
-{% assign next_event_post = future_event_news[last_index] %}
-{% endif %}
+{% assign next_event_post = future_event_news.first %}
 
 

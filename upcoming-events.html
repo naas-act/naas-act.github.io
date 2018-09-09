@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+<!-- This is a copy of even-announcement.html instantiated with next_event_post -->
+
 <div class="container">
   <div class="row">
     <div class="col-md-8">
@@ -18,7 +20,15 @@ layout: default
       {% endif %}
     </div>
     <div class="col-md-4">
-	{% include news-sidebar.html %}
+	{% include event-announcements-sidebar.html %}
     </div>
   </div>
+
+  {% if next_event_post.flyer %}
+  <div class="row">
+    <div class="col-md-12">
+      <img src="{{ next_event_post.flyer }}" alt="Flyer" class="img-responsive">
+    </div>
+  </div>
+  {% endif %}
 </div>

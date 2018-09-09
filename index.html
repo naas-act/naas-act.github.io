@@ -11,61 +11,66 @@ layout: default
     </div>
 </div>
 
+{% include classify-news.html %}
+
 <div class="container">
-    <div class="row">
-      <div class="col-md-7">
-        <h2 class="header-light regular-pad">Welcome</h2>
-        <blockquote>
-          <p>The National Aeromodelling and Aviators Society (NAAS)
-	    promotes all aspects of building and flying model aircraft.
-	  </p>
-	  
-	  <p> We frequently host flying events
-	    at out field located in the Namadgi National Park.</p>
+  <div class="row">
+    <div class="col-md-7">
+      <h2 class="header-light regular-pad">Welcome</h2>
+      <blockquote>
+        <p>The National Aeromodelling and Aviators Society (NAAS)
+	  promotes all aspects of building and flying model aircraft.
+	</p>
+	
+	<p> We frequently host flying events
+	  at out field located in the Namadgi National Park.</p>
+	
+	<p>We welcome interested visitors from the public and guest
+	  fliers from other clubs. We usually fly on weekends and
+	  public holidays.</p>
+      </blockquote>
 
-	  <p>We welcome interested visitors from the public and guest
-	    fliers from other clubs. We usually fly on weekends and
-	    public holidays.</p>
-        </blockquote>
-      </div>
-      <div class="col-md-5 text-center">
-        <img src="img/IMG_6898_0-cropped.jpg" alt="" class="img-responsive">
-      </div>
-    </div>
-
-
-    <div class="row">
-      {% include classify-news.html %}
-      <div class="col-md-7">
-	{% if site.posts != empty %}
-	<div class="recent-posts">
-	  <h4>Recent Announcements</h4>
-	  <ul class="post-list-container">
-	    {% for post in site.posts limit: 3 %}
-	    <li>
-	      <span>
-		<a href="{{ post.url }}">{{ post.title }}</a>
-		<time class="pull-right">
-		  {{ post.date | date_to_string | date: "%b %-d, %Y"  }}
-		</time>
-	      </span>
-	    </li>
-	    {% endfor %}
-	  </ul>
-	  <ul>
-	    <a href="/news.html"><em>View More...</em></a>
-	  </ul>
-	</div>
-	{% endif %}
-      </div>
       {% if next_event_post %}
-      <div class="col-md-5">
-	<div class="well">
-	  <h5>Next Event</h5>
-	  <h4><a href="{{ next_event_post.url }}">{{ next_event_post.title }} on {{ next_event_post.date }}</a></h4>
-	</div>
+      <div class="well">
+	<h4 class="text-center">Next Event: <a href="{{ next_event_post.url }}">{{ next_event_post.title }}
+	    on {{ next_event_post.date | date_to_string | date: "%b %-d, %Y"  }}</a></h4>
       </div>
       {% endif %}
       
+      {% if site.posts != empty %}
+      <div class="recent-posts">
+	<h4>News</h4>
+	<ul class="post-list-container">
+	  {% for post in site.posts limit: 3 %}
+	  <li>
+	    <span>
+	      <a href="{{ post.url }}">{{ post.title }}</a>
+	      <time><small>
+		  {{ post.date | date_to_string | date: "%b %-d, %Y"  }}
+		</small>
+	      </time>
+	    </span>
+	  </li>
+	  {% endfor %}
+	</ul>
+	<ul>
+	  <a href="{{ site.posts.first.url }}"><em>View More...</em></a>
+	</ul>
+      </div>
+      {% endif %}
+
     </div>
+    <div class="col-md-5">
+      <!-- Next event - first we try to see if there is a poster -->
+      {% if next_event_post.flyer %}
+      <a href="{{ next_event_post.url }}">
+      <img src="{{ next_event_post.flyer }}" alt="Flyer"
+	   class="img-responsive">
+      </a>
+      {% else %}
+      <img src="assets/home-default-hero-right.jpg" alt="" class="img-responsive">
+      {% endif %}
+
+    </div>
+  </div>
 </div>

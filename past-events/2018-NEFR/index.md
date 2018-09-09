@@ -1,7 +1,7 @@
 ---
 title: "National Electric Flight Rally"
 date: 31-3-2018
-youtubeurl: "https://www.youtube.com/watch?v=Clvp_DC0jyk&feature=youtu.be"
+youtube-id: Clvp_DC0jyk
 ---
 The National Electric Flight Rally was held at the N.A.A.S field in Canberra
 on the Easter weekend 2018. Events included F5J glider, Radian glider, old

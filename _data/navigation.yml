@@ -1,3 +1,5 @@
+- title: Home
+  url: /index.html
 - title: Events
   sublinks:
     - title: Upcoming Events
@@ -10,5 +12,5 @@
       url: /club/location.html
     - title: Contact
       url: /club/contact.html
-- title: Announcements
+- title: News
   url: /news.html

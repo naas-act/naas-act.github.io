@@ -13,8 +13,16 @@ layout: default
       </article>
     </div>
     <div class="col-md-4">
-	{% include news-sidebar.html %}
+	{% include event-announcements-sidebar.html %}
     </div>
   </div>
+
+  {% if page.flyer %}
+  <div class="row">
+    <div class="col-md-12">
+      <img src="{{ page.flyer }}" alt="Flyer" class="img-responsive">
+    </div>
+  </div>
+  {% endif %}
 </div>
 
