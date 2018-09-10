@@ -7,8 +7,7 @@ layout: default
       <article class="post">
 	<h1 class="post-title">{{ page.title }}</h1>
 	<h4 class="post-date">
-	  {{ page.date | date: "%b %-d, %Y" }}
-	  {% if page.end-date %} - {{ page.end-date | date: "%b %-d, %Y" }} {% endif %}
+	  {% include date-range.html start=page.date end =page.end-date %}
 	</h4>
 	{{ content }}
       </article>

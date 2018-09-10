@@ -1,16 +1,25 @@
 ---
-layout: default
+layout: empty
 ---
+<html>
+  <head>
+    {% include classify-past-events.html %}
+    {% assign event = past_events_sorted[0] %}
+    <meta http-equiv="Refresh" content="0; url={{event.url }}">
+  </head>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-9">
-      <h1></h1>
-      <h4 class="text-center">Please choose from the list on the right</h4>
-    </div>
-    <div class="col-md-3">
-      {% include past-events-sidebar.html %}
-    </div>
-  </div>
-</div>
+  <body>
+    {% include topnav.html %}
 
+    <div class="page-content">
+        <div class="wrapper">
+          Please wait ...  
+        </div>
+    </div>
+
+    {% include footer.html %}
+    {% include js_files.html %}
+
+  </body>
+
+</html>

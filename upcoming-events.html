@@ -1,35 +1,29 @@
 ---
-layout: default
+layout: empty
 ---
-<!-- This is a copy of even-announcement.html instantiated with next-event-post -->
+<html>
+  <head>
+    {% include classify-event-announcements.html %}
+    {% if next-event-post %}
+    <meta http-equiv="Refresh" content="0; url={{ next-event-post.url }}">
+    {% else %}
+    {% include head.html %}
+  {% endif %}
+  </head>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-8">
-      {% include classify-event-announcements.html %}
-      {% if next-event-post %}
-      <article class="post">
-	<h1 class="post-title">{{ next-event-post.title }}</h1>
-	<h4 class="post-date">
-	  {{ next-event-post.date | date: "%b %-d" }}
-	  {% if next-event-post.end-date %}
-	  - {{ next-event-post.end-date | date: "%b %-d, %Y" }}
-	  {% else %}
-	  {{ next-event-post.date | date: ", %Y" }}
-	  {% endif %}
-	</h4>
-	{{ next-event-post.content }}
-      </article>
-      {% if next-event-post.flyer %}
-      <img src="{{ next-event-post.flyer }}" alt="Flyer" class="img-responsive">
-      {% endif %}
-      {% else %}
-      <h3> No upcoming events</h3>
-      {% endif %}
-    </div>
-    <div class="col-md-4">
-	{% include event-announcements-sidebar.html %}
-    </div>
-  </div>
+  <body>
+    {% include topnav.html %}
 
-</div>
+    <div class="page-content">
+        <div class="wrapper">
+          No upcoming events 
+        </div>
+    </div>
+
+    {% include footer.html %}
+    {% include js_files.html %}
+
+  </body>
+
+</html>
+
