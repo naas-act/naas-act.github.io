@@ -1,0 +1,6 @@
+{{ include.start | date: "%b %-d" }}
+{% if include.end %}
+- {{ include.end | date: "%b %-d, %Y" }}
+{% else %}
+{{ include.start | date: ", %Y" }}
+{% endif %}
