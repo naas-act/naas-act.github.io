@@ -1,16 +1,16 @@
 
 <div class="sidebar">
 <h4>UPCOMING EVENTS</h4>
-{% include classify-news.html %}
+{% include classify-event-announcements.html %}
 
 <ul class="list-unstyled post-list-container">
-  {% for post in future_event_news %}
+  {% for post in upcoming-event-announcements %}
   <li>
       <span>
 	<a {% if post.url == page.url %} class="active" {% endif %}
 	   href="{{ post.url }}">
 	  {{ post.title }}
-	  {% if next_event_post.url == post.url %}
+	  {% if next-event-post.url == post.url %}
 	  &nbsp;<span class="badge"><smaller>Next</smaller></span>
 	  {% endif %}
 	</a>

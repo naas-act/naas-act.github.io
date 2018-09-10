@@ -1,23 +1,27 @@
 ---
 layout: default
 ---
-<!-- This is a copy of even-announcement.html instantiated with next_event_post -->
+<!-- This is a copy of even-announcement.html instantiated with next-event-post -->
 
 <div class="container">
   <div class="row">
     <div class="col-md-8">
-      {% include classify-news.html %}
-      {% if next_event_post %}
+      {% include classify-event-announcements.html %}
+      {% if next-event-post %}
       <article class="post">
-	<h1 class="post-title">{{ next_event_post.title }}</h1>
+	<h1 class="post-title">{{ next-event-post.title }}</h1>
 	<h4 class="post-date">
-	  {{ next_event_post.date | date: "%b %-d, %Y" }}
-	  {% if next_event_post.end-date %} - {{ next_event_post.end-date | date: "%b %-d, %Y" }} {% endif %}
+	  {{ next-event-post.date | date: "%b %-d" }}
+	  {% if next-event-post.end-date %}
+	  - {{ next-event-post.end-date | date: "%b %-d, %Y" }}
+	  {% else %}
+	  {{ next-event-post.date | date: ", %Y" }}
+	  {% endif %}
 	</h4>
-	{{ next_event_post.content }}
+	{{ next-event-post.content }}
       </article>
-      {% if next_event_post.flyer %}
-      <img src="{{ next_event_post.flyer }}" alt="Flyer" class="img-responsive">
+      {% if next-event-post.flyer %}
+      <img src="{{ next-event-post.flyer }}" alt="Flyer" class="img-responsive">
       {% endif %}
       {% else %}
       <h3> No upcoming events</h3>

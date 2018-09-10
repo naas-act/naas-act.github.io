@@ -1,0 +1,10 @@
+{% assign img-dir = page.url | append: 'img/' %}
+{% capture imgs-list-text %}
+{% for file in site.static_files %}
+{% assign ext = file.extname | downcase %}
+{% if file.path contains img-dir and ext == ".jpg" %}
+{{ file.path }}
+{% endif %}
+{% endfor %}
+{% endcapture %}
+{% assign imgs-list = imgs-list-text | split: ' ' %}

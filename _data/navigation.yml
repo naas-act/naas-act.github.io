@@ -8,8 +8,8 @@
       url: /past-events/index.html
 - title: Club
   sublinks:
-    - title: Location
-      url: /club/location.html
+    - title: Field
+      url: /club/field/index.html
     - title: Contact
       url: /club/contact.html
 - title: News

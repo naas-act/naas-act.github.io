@@ -1,0 +1,28 @@
+---
+title: Willie Emmett Airfield
+---
+
+<h3>Location</h3>
+
+
+<h3>Videos</h3>
+To get an impression of the field watch these videos
+from <a href="http://vimeo.com/user10994290">RCMedia</a>
+on <a href="https://vimeo.com/">Vimeo</a>:
+<ul>
+  <li>
+    <a href="http://vimeo.com/94353208">NAAS Open Day - May 4, 2014</a>
+  </li>
+  <li>
+    <a href="http://vimeo.com/91146147">NAAS Field Flyover</a>
+  </li>
+</ul>
+
+{% include images-list.html %}
+{% if imgs-list.size > 0 %}
+<h3>Photo Gallery</h3>
+{% for file in imgs-list %}
+<img src="{{ file }}" alt="image" class="img-responsive"/>
+{% endfor %}
+{% endif %}
+

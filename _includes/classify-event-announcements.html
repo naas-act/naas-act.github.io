@@ -1,0 +1,16 @@
+{% assign now-epoch = "now" | date: "%s" %}
+{% assign upcoming-event-announcements = "" | split: ' ' %}
+{% assign past-event-announcements = "" | split: ' ' %}
+{% for post in site.event-announcements  %}
+{% assign event-date-epoch = post.date | date: "%s" %}
+{% if event-date-epoch >= now-epoch %}
+{% assign upcoming-event-announcements = upcoming-event-announcements | push: post %}
+{% else %}
+{% assign past-event-announcements = past-event-announcements | push: post %}
+{% endif %}
+{% endfor %}
+{% assign upcoming-event-announcements = upcoming-event-announcements | sortby: "date" %}
+{% assign past-event-announcements = past-event-announcements | sortby: "date" | reverse %}
+{% assign next-event-post = upcoming-event-announcements.first %}
+
+
