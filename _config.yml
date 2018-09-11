@@ -1,6 +1,6 @@
 # Site settings
 title: NAAS
-email: naasflying@gmail.com
+email: naasact@outlook.com
 description: >
   National Aeromodelling & Aviators Society
 
@@ -8,7 +8,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://naas-act.github.io/ # the base hostname & protocol for your site
 # git_address: https://github.com/aksakalli/jekyll-doc-theme
 # git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
-twitter-address: https://www.facebook.com/naasact/
+facebook: https://www.facebook.com/naasact/
+youtube: https://www.youtube.com/channel/UCu2pUGqKC1YerR2qKrzbO4A
 
 # theme options from https://bootswatch.com/
 # comment out this to use default Bootstrap

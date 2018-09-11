@@ -7,24 +7,33 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
 	  </button>
-          <!-- <a class="navbar-brand" href="{{ site.baseurl }}/"> -->
-          <!--   <span><img src="{{site.baseurl}}/img/logonav.png"></span> {{ -->
-          <!--   site.title }} -->
-          <!-- </a> -->
+          <a class="navbar-brand" href="{{ site.baseurl }}/"> 
+            <span><img src="{{site.baseurl}}/img/logonav.png"></span> {{ site.title }}
+          </a> 
         </div>
         <div id="navbar" class="collapse navbar-collapse">
 	  {% include topnav-inner.html %}
           <div class="navbar-right">
             <form class="navbar-form navbar-left">
-              <div class="form-group has-feedback">
+	      <div class="form-group has-feedback">
                 <input id="search-box" type="text" class="form-control" placeholder="Search...">
                 <i class="fa fa-search form-control-feedback"></i>
-              </div>
+	      </div>
             </form>
-            <a class="navbar-brand" href="{{ site.twitter-address }}">
-	      <img src={% link /assets/flogo-HexRBG-Wht-250-BRC-Site.svg %}>
-	    </a>
+            <nav class="navbar-brand">
+	      <a href="{{ site.youtube }}">
+		<img height=24 width=24 src={% link /assets/YouTube_social_white_squircle_2017.svg %}>
+	      </a>
+	      &nbsp;
+	      <a href="{{ site.facebook }}">
+		<img height=24 width=24 src={% link /assets/flogo-HexRBG-Wht-250-BRC-Site.svg %}>
+	      </a>
+	      &nbsp;
+	      <a href="mailto:{{site.email}}">
+		<img height=24 width=24 src={% link /assets/email-logo-1.svg %}>
+	      </a>
+	    </nav>
           </div>
-        </div>
+	</div>
     </div>
 </nav>
