@@ -1,7 +1,7 @@
 ---
 title: Mammoth Fly-In
 flyer: /assets/mammoth-fly-in-2018.pdf
-end-date: 4-11-2018
+end-date: 2018-11-04
 ---
 All MAAA pilots welcome. If you want to be part of this great experience bring
 what you have. The field will be open on Friday morning. 

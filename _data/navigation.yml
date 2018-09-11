@@ -6,9 +6,23 @@
       url: /past-events/index.html
 - title: Club
   sublinks:
-    - title: Field
-      url: /club/field/index.html
-    - title: Contact
-      url: /club/contact.html
+    - title: About
+      url: /club/about.html
+    - title: Member Aircraft
+      url: /club/member-aircraft/index.html
+    - title: In the News
+      url: /club/in-the-news.html
+- title: Field
+  sublinks:
+    - title: Location
+      url: /field/location.html
+    - title: Photo and Video Gallery
+      url: /field/gallery/index.html
+    - title: Flying at NAAS
+      url: /field/flying-at-NAAS.html
+    - title: Camping
+      url: /field/camping.html
 - title: News
   url: /news.html
+- title: Contact
+  url: /contact.html

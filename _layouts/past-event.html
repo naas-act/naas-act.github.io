@@ -5,7 +5,7 @@ layout: default
   <div class="row">
     <div class="col-md-9">
       <h1>{{ page.title }}</h1>
-      <h4>{{ page.date | date: "%b %-d, %Y" }}</h4>
+      <h4> {% include date-range.html start=page.date end=page.end-date %} </h4>
       <div id="markdown-content-container">{{ content }}</div>
       {% if page.youtube-id %}
       <h2>Video</h2>

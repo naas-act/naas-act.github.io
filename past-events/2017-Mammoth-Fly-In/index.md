@@ -1,4 +1,7 @@
 ---
 title: Mammoth Fly-In
-date: 1-1-2017
+xdate: 2017-04-01
+date: 1-4-2017
 ---
+
+todo: correct date?

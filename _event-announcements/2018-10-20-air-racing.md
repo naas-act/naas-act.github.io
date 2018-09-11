@@ -1,7 +1,7 @@
 ---
 title: F1 National Air Race Championships
 flyer: /assets/F1-air-race-2018.pdf
-end-date: 21-10-2018
+end-date: 2018-10-21
 ---
 Formula 1, Formula 2, Red Bull, AT6 Texan, Reno, Golden Era.
 

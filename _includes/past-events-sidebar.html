@@ -10,7 +10,7 @@
   {% for p in past_events_sorted %}
   <li>
     <span>
-    <a href="{{ p.url }}" {% if p.title == page.title %} class="active" {% endif %}>{{ p.title }}</a>
+    <a href="{{ p.url }}" {% if p.url == page.url %} class="active" {% endif %}>{{ p.title }}</a>
     <time class="pull-right">
       {{ p.date | date: "%b %Y" }}
     </time>
