@@ -1,0 +1,33 @@
+---
+title: About
+---
+
+<p>The <em>National Aeromodelling and Aviators Society</em>, NAAS, was founded
+  in 2013.
+  It is an <a href="https://www.maaa.asn.au">MAAA</a>
+  affiliated club.
+  </p>
+
+<h3>Members Passions</h3>
+
+<p>Our members represent a variety of passions in the hobby:</p>
+
+<ul>
+<li>Scale models: building (from scratch) and flying, predominantly WW1</li>
+<li>Aerobatics: IMAC and 3D</li>
+<li>Gliders and gliding</li>
+<li>ARFs and recreational ("sport") flying </li>
+<li>FPV</li>
+<li>Organizing events</li>
+</ul>
+
+
+{% include images-list.html %}
+{% if imgs-list.size > 0 %}
+<h3>Photos</h3>
+{% for file in imgs-list %}
+<img src="{{ file }}" alt="image" class="img-responsive"/>
+{% endfor %}
+{% endif %}
+
+

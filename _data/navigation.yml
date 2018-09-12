@@ -9,9 +9,7 @@
 - title: Club
   sublinks:
     - title: About
-      url: /club/about.html
-    - title: Member Aircraft
-      url: /club/member-aircraft/index.html
+      url: /club/about/index.html
     - title: In the News
       url: /club/in-the-news.html
 - title: Field
