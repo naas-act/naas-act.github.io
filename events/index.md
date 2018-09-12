@@ -11,7 +11,7 @@ See the photos below to get an impression of what NAAS events are like.
 
 See also our videos on past events on [Youtube]({{ site.youtube }}).
 
-{% include images-list.html %}
+{% include images-list.html subdir="img" %}
 {% if imgs-list.size > 0 %}
 ### Photos
 {% for file in imgs-list %}

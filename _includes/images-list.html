@@ -1,4 +1,5 @@
-{% assign img-dir = page.url | append: 'img/' %}
+{% assign pwd = page.path | split: '/' | pop %}
+{% assign img-dir = pwd | push: include.subdir | join: '/' %}
 {% capture imgs-list-text %}
 {% for file in site.static_files %}
 {% assign ext = file.extname | downcase %}
