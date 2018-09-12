@@ -6,12 +6,17 @@ The National Aeromodelling and Avitors Society (N.A.A.S) is situated in the
 Namadgi National Park in the Naas Valley in the ACT just south of the town of
 Tharwa.
 
+### Find us
+
 From the Tharwa Bridge the field is on the left hand side about 9.5 kms just
 past Sunshine road.
 
 ![Map](/assets/map.jpg)
 
-## About the Area
+
+todo: Google maps thingy here
+
+### About the Area
 
 
 *Naas Valley* is an area south of
