@@ -20,7 +20,7 @@ outlets.
   features an article on his Fokker D.V11 in the "Scale Matters" column.
 
 
-**Please let the [webmaster]({% link contact.md %}) know of additional
+**Please let the [webmaster]({% link club/contact.md %}) know of additional
    reports.**
 
 	

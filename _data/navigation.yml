@@ -12,6 +12,8 @@
       url: /club/about.html
     - title: In the News
       url: /club/in-the-news.html
+    - title: Contact
+      url: /club/contact.html
 - title: Field
   sublinks:
     - title: Location
@@ -24,5 +26,3 @@
       url: /field/gallery/index.html
 - title: News
   url: /news.html
-- title: Contact
-  url: /contact.html
