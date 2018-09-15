@@ -1,0 +1,2 @@
+{% assign img-dir = page.path | split: '/' | pop | push: include.subdir | join: '/' %}
+{% include image-gallery.html folder=img-dir %}

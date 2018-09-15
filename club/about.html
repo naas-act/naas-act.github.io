@@ -23,16 +23,9 @@ title: About
 </ul>
 
 
-{% include images-list.html subdir="in-the-workshop-img"%}
 <h3>In the Workshop</h3>
-{% for file in imgs-list %}
-<img src="{{ file }}" alt="image" class="img-responsive"/>
-{% endfor %}
+{% include image-gallery-from-subdir.html subdir="in-the-workshop-img"%}
 
-{% include images-list.html subdir="in-the-air-img"%}
 <h3>In the Air</h3>
-{% for file in imgs-list %}
-<img src="{{ file }}" alt="image" class="img-responsive"/>
-{% endfor %}
-
+{% include image-gallery-from-subdir.html subdir="in-the-air-img"%}
 
