@@ -2,14 +2,20 @@
 <div class="sidebar">
 <h4>NEWS</h4>
 <ul class="list-unstyled post-list-container">
+  {% assign cnt = 0 %}
   {% for post in site.posts  %}
+  {% assign cnt = cnt | plus: 1 %}
   <li>
     <span>
       <a
 	{% if page.url == post.url %}
 	class="active"
 	{% endif %}
-	href="{{ post.url }}">{{ post.title }}</a>
+	href="{% link news.html %}#{{cnt}}">{{ post.title }}
+	{% comment %}
+	href="{{ post.url }}">{{ post.title }}
+	{% endcomment %}
+      </a>
       <time class="pull-right"><small>
           {{ post.date | date_to_string | date: "%b %-d, %Y"  }}
 	  </small>

@@ -4,7 +4,7 @@ layout: empty
 <html>
   <head>
     {% include classify-past-events.html %}
-    {% assign event = past_events_sorted[0] %}
+    {% assign event = grouped[0].items[0] %}
     <meta http-equiv="Refresh" content="0; url={{event.url }}">
   </head>
 

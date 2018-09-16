@@ -1,22 +1,18 @@
 
 <div class="sidebar">
-
-  <!-- From static_pages with url of the form "/events/past/SOME_EVENT" -->
-  <!-- get the list of all past events and sort them -->
   {% include classify-past-events.html %}
-
   <h4>PAST EVENTS</h4>
+  {% for g in grouped %}
+  <h5>{{ g.name }}</h5>
   <ul class="list-unstyled post-list-container">
-  {% for p in past_events_sorted %}
-  <li>
-    <span>
-    <a href="{{ p.url }}" {% if p.url == page.url %} class="active" {% endif %}>{{ p.title }}</a>
-    <time class="pull-right">
-      {{ p.date | date: "%b %Y" }}
-    </time>
-    </span>
-  </li>
-  {% endfor %}
+    {% assign items_sorted = g.items | sort: 'date' | reverse %}
+    {% for p in items_sorted %}
+    <li>
+      &nbsp;&nbsp;<a href="{{ p.url }}" {% if p.url == page.url %} class="active" {% endif %}>
+	{{ p.date | date: "%b %Y" }}
+      </a>
+    </li>
+    {% endfor %}
   </ul>
- 
+  {% endfor %}
 </div>

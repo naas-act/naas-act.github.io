@@ -5,7 +5,20 @@
   .image-gallery a img {width: 100%; display: block;}
 </style>
 
+<!-- The Gallery as lightbox dialog, should be a child element of the document body -->
+<div id="blueimp-gallery-{{include.ident}}" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
+
 <div class="image-gallery">
+  <div id="{{include.ident}}">
 {% for file in site.static_files %}
   {% if file.path contains include.folder %}
     {% if file.extname == '.jpg' or 
@@ -17,14 +30,24 @@
       {% assign filename = filenameparts | last | replace: file.extname,"" %}
 
       <a href="{{ file.path }}" title="{{ filename }}">
-	{% comment %}
-        <img src="//images.weserv.nl/?url=jekyllcodex.org/{{ file.path }}&w=300&h=300&output=jpg&q=50&t=square" alt="{{ filename }}" />
-        <span>{{ filename }}</span>
-	{% endcomment %}
-        <img src="{{ file.path }}" width=200" alt="{{ filename }}" />
+        <img src="{{ file.path }}" width="200" alt="{{ filename }}" />
       </a>
+
     {% endif %}
   {% endif %}
 {% endfor %}
 </div>
+</div>
+
+<script>
+document.getElementById('{{include.ident}}').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event, container: '#blueimp-gallery-{{include.ident}}'},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+
 

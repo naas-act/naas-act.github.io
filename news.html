@@ -1,18 +1,22 @@
 ---
 layout: default
 ---
-{% assign p = site.posts[0] %}
 <div class="container">
   <div class="row">
     <div class="col-md-8">
+      <h1> News</h1>
+      {% assign cnt = 0 %}
+      {% for p in site.posts %}
+      {% assign cnt = cnt | plus: 1 %}
       <article class="post">
-	<h1 class="post-title">{{ p.title }}</h1>
+	<h3 id="{{cnt}}" class="post-title">{{ p.title }}</h3>
 	<h4 class="post-date">
 	  {{ p.date | date: "%b %-d, %Y" }}
 	</h4>
 	{{ p.content }}
       </article>
-
+      <hr>
+      {% endfor %}
     </div>
     <div class="col-md-4">
 	{% include news-sidebar.html %}

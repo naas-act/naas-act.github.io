@@ -58,6 +58,7 @@ defaults:
     path: past-events
   values:
     layout: past-event
+    foo: "xyz"
 
 - scope:
     path: ""
@@ -74,6 +75,8 @@ collections:
 
 plugins_dir:
   - jekyll-youtube
+
+exclude: [LICENSE-CODE.md, LICENSE-IMAGES, README.md, bower.json]
 
 # plugins:
 #   - jekyll-maps
