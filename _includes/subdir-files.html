@@ -1,0 +1,11 @@
+{% assign pwd = page.path | split: '/' | pop %}
+{% assign dir = pwd | push: include.subdir | join: '/' %}
+{% capture files-list-text %}
+{% for file in site.static_files %}
+{% assign ext = file.extname | downcase %}
+{% if file.path contains dir and ext == ".jpg" %}
+{{ file.path }}
+{% endif %}
+{% endfor %}
+{% endcapture %}
+{% assign files-list = files-list-text | split: ' ' %}

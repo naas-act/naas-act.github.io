@@ -13,8 +13,8 @@ layout: default
       {% endif %}
 
 
-      {% include images-list.html subdir="img"%}
-      {% if imgs-list.size > 0 %}
+      {% include subdir-files.html subdir="img"%}
+      {% if files-list.size > 0 %}
       <h2>Photo Gallery</h2>
       {% include image-gallery-from-subdir.html ident="links" subdir="img" %}
       {% endif %}
