@@ -36,7 +36,7 @@ layout: default
 	    on {{ next-event-post.date | date_to_string | date: "%b %-d, %Y"  }}</a></h4>
       </div>
       {% endif %}
-      
+
       {% if site.posts != empty %}
       <div class="recent-posts">
 	<h4>RECENT NEWS</h4>
@@ -61,6 +61,7 @@ layout: default
 
     </div>
     <div class="col-md-5">
+      
       <!-- Next event - first we try to see if there is a poster -->
       {% if next-event-post.flyer %}
       <a href="{{ next-event-post.url }}">
