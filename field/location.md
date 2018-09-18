@@ -9,12 +9,13 @@ Tharwa.
 ### Find us
 
 From the Tharwa Bridge the field is on the left hand side about 9.5 kms just
-past Sunshine road.
+past Sunshine Road.
 
-![Map](/assets/map.jpg)
-
-
-todo: Google maps thingy here
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2512.424326201641!2d149.06358658931944!3d-35.5860236173451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b17d28c9464422b%3A0x319b2c7174895bc6!2sWillie+Emmett+Model+flying+field!5e1!3m2!1sen!2sau!4v1537265834420"
+frameborder="0" style="border:0"
+width="600" height="450" 
+allowfullscreen></iframe>
 
 ### About the Area
 

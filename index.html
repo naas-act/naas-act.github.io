@@ -31,7 +31,7 @@ layout: default
       </blockquote>
 
       {% if next-event-post %}
-      <div class="well">
+      <div class="well well-sm">
 	<h4 class="text-center">Next Event: <a href="{{ next-event-post.url }}">{{ next-event-post.title }}
 	    on {{ next-event-post.date | date_to_string | date: "%b %-d, %Y"  }}</a></h4>
       </div>

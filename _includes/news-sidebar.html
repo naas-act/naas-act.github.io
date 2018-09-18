@@ -1,11 +1,11 @@
 
-<div class="sidebar">
+<div class="sidebar" data-spy="affix" data-offset-top="100">
 <h4>NEWS</h4>
-<ul class="list-unstyled post-list-container">
+<ul class="list-unstyled post-list-container" id="news-sidebar">
   {% assign cnt = 0 %}
   {% for post in site.posts  %}
   {% assign cnt = cnt | plus: 1 %}
-  <li>
+  <li id="{{cnt}}">
     <span>
       <a
 	{% if page.url == post.url %}
@@ -25,3 +25,4 @@
   {% endfor %}
 </ul>
 </div>
+

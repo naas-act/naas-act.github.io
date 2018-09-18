@@ -6,7 +6,7 @@ description: >
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://naas-act.github.io/ # the base hostname & protocol for your site
-# git_address: https://github.com/aksakalli/jekyll-doc-theme
+git_address: https://github.com/naas-act/naas-act.github.io/tree/master
 # git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
 facebook: https://www.facebook.com/naasact/
 youtube: https://www.youtube.com/channel/UCu2pUGqKC1YerR2qKrzbO4A

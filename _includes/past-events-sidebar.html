@@ -1,7 +1,17 @@
 
-<div class="sidebar">
+<div class="sidebar"  data-spy="affix" data-offset-top="100">
   {% include classify-past-events.html %}
+
   <h4>PAST EVENTS</h4>
+{% comment %}
+  <div class="form-group form-group-sm">
+      <label for="sel1">Group by:</label>
+      <select class="form-control" id="sel1">
+	<option>Name</option>
+	<option>Year</option>
+      </select>
+  </div>
+{% endcomment %}
   {% for g in grouped %}
   <h5>{{ g.name }}</h5>
   <ul class="list-unstyled post-list-container">
