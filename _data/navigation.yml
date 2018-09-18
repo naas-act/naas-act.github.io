@@ -1,6 +1,6 @@
 - title: Events
   sublinks:
-    - title: General Information
+    - title: General
       url: /events/index.html
     - title: Upcoming Events
       url: /upcoming-events.html
@@ -10,6 +10,8 @@
   sublinks:
     - title: About
       url: /club/about.html
+    - title: Video and Photo Gallery
+      url: /club/about.html#videos-photos
     - title: In the News
       url: /club/in-the-news.html
     - title: Contact
@@ -22,7 +24,5 @@
       url: /field/flying-at-naas.html
     - title: Facilities
       url: /field/facilities.html
-    - title: Photo and Video Gallery
-      url: /field/gallery.html
 - title: News
   url: /news.html
