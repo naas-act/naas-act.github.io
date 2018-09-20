@@ -2,16 +2,44 @@
 <div class="sidebar" data-spy="affix" data-offset-top="0">
   {% include classify-past-events.html %}
 
-  <h4>PAST EVENTS</h4>
-{% comment %}
-  <div class="form-group form-group-sm">
-      <label for="sel1">Group by:</label>
-      <select class="form-control" id="sel1">
-	<option>Name</option>
-	<option>Year</option>
-      </select>
-  </div>
-{% endcomment %}
+  {% assign parts = page.path | split: '/' %}
+  {% assign dir = parts | pop %}
+  {% assign file = parts | last %}
+  {% assign base = file | split: '.' | first %}
+  {% assign ext = file | split: '.' | last %}
+  {% if base == 'index-year' %}
+  {% assign by_year = true %}
+  {% assign alternate = page.url | replace: "index-year", "index" %}
+  {% else %}
+  {% assign by_year = false %}
+  {% assign alternate = page.url | append: "index-year.html" %}
+  {% endif %}
+  
+<h4>PAST EVENTS</h4>
+
+  {% if by_year %}
+  
+  <p> (Group by <a href="{{ alternate }} ">event</a> instead)</p>
+
+  {% for g in grouped_by_year %}
+  <h5>{{ g.name }}</h5>
+  <ul class="list-unstyled post-list-container">
+    {% assign items_sorted = g.items | sort: 'title' %}
+    {% for p in items_sorted %}
+    {% assign p_url = p.url | append: "index-year.html" %}
+    <li>
+      &nbsp;&nbsp;&nbsp;<a href="{{ p_url }}" {% if p_url == page.url %} class="active" {% endif %}>
+	{{ p.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endfor %}
+
+  {% else %}
+
+<p> (Group by <a href="{{ alternate }} ">year</a> instead)</p>
+
   {% for g in grouped %}
   <h5>{{ g.name }}</h5>
   <ul class="list-unstyled post-list-container">
@@ -25,4 +53,8 @@
     {% endfor %}
   </ul>
   {% endfor %}
+
+  {% endif %}
+
+
 </div>

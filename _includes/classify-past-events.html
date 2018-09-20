@@ -1,8 +1,11 @@
 {% assign past_events = "" | split: ' ' %} <!-- Dummy to get empty array -->
 {% for p in site.html_pages %}
-{% assign p_elems = p.url | split: '/' %}
-{% if p.date and p_elems[1] == "past-events" %}
+{% assign p_elems = p.path | split: '/' %}
+{% assign p_base = p_elems.last | split: '.' | first %}
+{% if p.date and p_base == 'index' and p_elems[0] == "past-events" %}
 {% assign past_events = past_events | push: p %}
 {% endif %}
 {% endfor %}
+{% assign grouped_by_year = past_events | group_by_exp:"event","event.date |
+date: '%Y'" | sort: "name" | reverse %}
 {% assign grouped = past_events | group_by:"title" %}
