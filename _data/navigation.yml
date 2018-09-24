@@ -1,11 +1,11 @@
 - title: Events
   sublinks:
-    - title: General
+    - title: About
       url: /events/index.html
-    - title: Upcoming Events
-      url: /upcoming-events.html
-    - title: Past Events
+    - title: Past
       url: /past-events/index.html
+    - title: Upcoming
+      url: /upcoming-events.html
 - title: Club
   sublinks:
     - title: About

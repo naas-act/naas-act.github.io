@@ -22,7 +22,7 @@
   <p> (Group by <a href="{{ alternate }} ">event</a> instead)</p>
 
   {% for g in grouped_by_year %}
-  <h5>{{ g.name }}</h5>
+  <h5><strong>{{ g.name }}</strong></h5>
   <ul class="list-unstyled post-list-container">
     {% assign items_sorted = g.items | sort: 'title' %}
     {% for p in items_sorted %}
@@ -41,7 +41,7 @@
 <p> (Group by <a href="{{ alternate }} ">year</a> instead)</p>
 
   {% for g in grouped %}
-  <h5>{{ g.name }}</h5>
+  <h5><strong>{{ g.name }}</strong></h5>
   <ul class="list-unstyled post-list-container">
     {% assign items_sorted = g.items | sort: 'date' | reverse %}
     {% for p in items_sorted %}

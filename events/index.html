@@ -1,15 +1,31 @@
 ---
-title: General Information
+layout: default
 ---
+<div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <h1>About</h1>
+      <p>The field gets very busy at events. </p>
+      
+      <p>todo: some description of what it's like: camping, spit roast, Mountain View
+	canteen; the kind of events we hold.</p>
 
-<p>The field gets very busy at events. </p>
+      <p>See the photos below to get an impression of what NAAS events are like.</p>
+      
+      <p>See also our videos on past events on <a href="{{ site.youtube }}">Youtube</a>.</p>
 
-<p>todo: some description of what it's like: camping, spit roast, Mountain View
-canteen; the kind of events we hold.</p>
+      <h4>Photos</h4>
+      <p>The following photos give an impression of what it's like at events.</p>
 
-<p>See the photos below to get an impression of what NAAS events are like.</p>
+      {% include image-gallery-from-subdir.html subdir="img" ident="events" %}
 
-<p>See also our videos on past events on <a href="{{ site.youtube }}">Youtube</a>.
+    </div>
+    <div class="col-md-3">
+      <div class="sidebar" data-spy="affix" data-offset-top="0">
+	<h5><a href="{% link past-events/index.html %}">Past events</a></h5>
+	<h5><a href="{% link upcoming-events.html %}">Upcoming events</a></h5>
+      </div>
+    </div>
+  </div>
 
-<h4>Photos</h4>
-{% include image-gallery-from-subdir.html subdir="img" ident="events" %}
+</div>
