@@ -19,7 +19,7 @@
 
   {% if by_year %}
   
-  <p> (Group by <a href="{{ alternate }} ">event</a> instead)</p>
+  <p> <a href="{{ alternate }} ">by name</a> / by year</p>
 
   {% for g in grouped_by_year %}
   <h5><strong>{{ g.name }}</strong></h5>
@@ -38,8 +38,8 @@
 
   {% else %}
 
-<p> (Group by <a href="{{ alternate }} ">year</a> instead)</p>
-
+  <p>by name / <a href="{{ alternate }} ">by year</a></p>
+  
   {% for g in grouped %}
   <h5><strong>{{ g.name }}</strong></h5>
   <ul class="list-unstyled post-list-container">
