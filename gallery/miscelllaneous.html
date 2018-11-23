@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <h1>Miscellaneous</h1>
+
+      <a name="atthefieldandintheair"</a>
+      <h3 >At the Field</h3>
+      {% include image-gallery-from-subdir.html subdir="gallery-img" ident="gallery" %}
+
+      <a name="intheworkshop"</a>
+      <h3>In the Workshop</h3>
+      {% include image-gallery-from-subdir.html subdir="in-the-workshop-img" ident="workshop" %}
+
+      <a name="clubhistory"</a>
+      <h3>Club History</h3>
+      {% include image-gallery-from-subdir.html subdir="history-img" ident="history" %}
+
+      <a name="facilities"</a>
+      <h3>Facilities</h3>
+      {% include image-gallery-from-subdir.html subdir="facilities-img" ident="facilities" %}
+
+    </div>
+    <div class="col-md-2">
+      <div class="sidebar" data-spy="affix" data-offset-top="0">
+	<ul class="list-unstyled post-list-container">
+	  <li><a href="#atthefieldandintheair">At the Field</a></li>
+	  <li><a href="#intheworkshop">In the Workshop</a></li>
+	  <li><a href="#clubhistory">Club history</a></li>
+	  <li><a href="#facilities">Facilities</a></li>
+	</ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+

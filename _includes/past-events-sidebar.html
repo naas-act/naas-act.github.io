@@ -1,5 +1,6 @@
 
-<div class="sidebar" data-spy="affix" data-offset-top="0">
+<!-- <div class="sidebar" data-spy="affix" data-offset-top="0"> -->
+  <div class="sidebar">
   {% include classify-past-events.html %}
 
   {% assign parts = page.path | split: '/' %}
@@ -43,7 +44,7 @@
   {% for g in grouped %}
   <h5><strong>{{ g.name }}</strong></h5>
   <ul class="list-unstyled post-list-container">
-    {% assign items_sorted = g.items | sort: 'date' | reverse %}
+    {% assign items_sorted = g.items | sort: "date" %}
     {% for p in items_sorted %}
     <li>
       &nbsp;&nbsp;&nbsp;<a href="{{ p.url }}" {% if p.url == page.url %} class="active" {% endif %}>

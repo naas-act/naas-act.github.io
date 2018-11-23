@@ -1,28 +1,24 @@
-- title: Events
-  sublinks:
-    - title: About
-      url: /events/index.html
-    - title: Past
-      url: /past-events/index.html
-    - title: Upcoming
-      url: /upcoming-events.html
+- title: Upcoming Events
+  url: /upcoming-events.html
 - title: Club
   sublinks:
     - title: About
       url: /club/about.html
-    - title: Video and Photo Gallery
-      url: /club/about.html#videos-photos
+    - title: Flying at NAAS
+      url: /club/flying-at-naas.html
+    - title: Field Location
+      url: /club/field-location.html
     - title: In the News
       url: /club/in-the-news.html
     - title: Contact
       url: /club/contact.html
-- title: Field
+- title: Gallery
   sublinks:
-    - title: Location
-      url: /field/location.html
-    - title: Flying at NAAS
-      url: /field/flying-at-naas.html
-    - title: Facilities
-      url: /field/facilities.html
+    - title: Past Events
+      url: /past-events/index.html
+    - title: Videos 
+      url: /gallery/videos.html
+    - title: Miscellaneous
+      url: /gallery/miscelllaneous.html
 - title: News
   url: /news.html

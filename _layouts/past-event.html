@@ -12,6 +12,11 @@ layout: default
       {% include youtubevideo.html id=page.youtube-id %}
       {% endif %}
 
+      {% if page.vimeo-id %}
+      <h2>Video</h2>
+      {% include vimeovideo.html id=page.vimeo-id %}
+      {% endif %}
+
 
       {% include subdir-files.html subdir="img"%}
       {% if files-list.size > 0 %}

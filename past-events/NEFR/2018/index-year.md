@@ -1,6 +1,6 @@
 ---
-title: National Electric Flight Rally
-date: 31-3-2018
+title: National Electric Flight Rally and F5J
+date: 2018-03-31 00:00
 youtube-id: Clvp_DC0jyk
 ---
 The National Electric Flight Rally MAAA and F5J competition is organized by the [Australian Electric

@@ -1,24 +1,12 @@
+Old site:
+
 rackspace
 login: naaswebmaster
 
-- images_list:
-  - sort by name
 
-  - Thumbnails: http://rmagick.rubyforge.org/
+Past events entry page could show thumbnails of posters of these events
 
-- News: are really not that long, show them all at once, separated by a bar
 
-- Image galleries:
- - jekyll-image-gallery - viable?
-
- - https://www.jssor.com/demos/image-gallery.slider,
-  eg Image Gallery see folder, 
-
- - https://github.com/alexivkin/Jekyll-Art-Gallery-Plugin
-   Very nice gallery but requires Ruby skills:
-
- - Photoswipe: too complicated
- 
 Interesting addons:
 https://jekyllcodex.org/without-plugins/
 

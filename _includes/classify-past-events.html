@@ -6,6 +6,6 @@
 {% assign past_events = past_events | push: p %}
 {% endif %}
 {% endfor %}
-{% assign grouped_by_year = past_events | group_by_exp:"event","event.date |
-date: '%Y'" | sort: "name" | reverse %}
-{% assign grouped = past_events | group_by:"title" %}
+{% assign past_events = past_events | sort: 'date' %}
+{% assign grouped_by_year = past_events | group_by_exp:"event","event.date | date: '%Y'" | sort: "name" | reverse %}
+{% assign grouped = past_events | sort: "title" | group_by:"title" %}
