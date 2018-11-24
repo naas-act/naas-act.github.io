@@ -1,0 +1,53 @@
+#!/bin/sh
+
+size_medium="1600x1066"
+size_small="500x333"
+quality_medium=75
+quality_small=60
+
+usage () { 
+    echo "resize-images-dir DIR ..."
+    echo "Resizes all jpg files in DIR into small and medium versions in corresponding subdirectories of DIR"
+    exit -1
+}
+
+
+if [ -z "$1" ]
+then
+    echo "No directory given"
+    usage
+fi
+if [ ! -d "$1" ]
+then
+    echo "not a directory: $1"
+    usage
+fi
+
+if [ -e "$1/resized" ]
+then
+    echo "jpg files in directoy $1 are already resized"
+    exit 0
+fi
+
+echo "==================================="
+echo "Resizing jpg files in directory $1"
+echo "==================================="
+
+rm -rf "$1/small"
+rm -rf "$1/medium"
+mkdir "$1/small"
+mkdir "$1/medium"
+
+
+files="$1/*.[jJ][pP][gG]"
+for file in $files; do
+     echo "$file"
+     base=$(basename -a "$file")
+     convert -size $size_small "$file" -resize $size_small -quality $quality_small "$1/small/$base"
+     convert -size $size_medium "$file" -resize $size_medium -quality $quality_medium "$1/medium/$base"
+done
+
+touch "$1/resized"
+
+
+#

@@ -20,20 +20,31 @@
 
 <div class="image-gallery">
   <div id="{{include.ident}}">
-{% for file in site.static_files %}
-  {% if file.path contains include.folder %}
-    {% if file.extname == '.jpg' or 
-      file.extname == '.jpeg' or 
-      file.extname == '.JPG' or 
-      file.extname == '.JPEG' %}
+    {% assign include_dir_small = include.folder | append: "/small" %}
+    {% for file in site.static_files %}
+    {% assign file_dir =  file.path | split: "/" | pop | join: "/" %}
+    {% if file_dir == include_dir_small %}
+    {% if file.extname == '.jpg' or file.extname == '.jpeg' or file.extname == '.JPG' or file.extname == '.JPEG' %}
+    {% assign base = file.path | split: "/" | last %}
+    {% assign base_no_ext = base | replace: file.extname,"" %}
 
-      {% assign filenameparts = file.path | split: "/" %}
-      {% assign filename = filenameparts | last | replace: file.extname,"" %}
+    {% assign file_small = file.path %}
+    {% assign file_medium = file.path | replace: "/small/","/medium/" %}
+<a href="{{ file_medium }}" title="{{ base_no_ext }}">
+<img src="{{ file_small }}" width="200" />
+</a>
 
-      <a href="{{ file.path }}" title="{{ filename }}">
-        <img src="{{ file.path }}" width="200" alt="{{ filename }}" />
-      </a>
+   {% comment %}
+   <p> file_dir = {{ file_dir }} -- file.path = {{ file.path }} --
+   include.folder = {{ include.folder }} -- include_dir_small = {{ include_dir_small }} --
+     file_small = {{ file_small }} --
+     file_medium = {{ file_medium }}
+   </p>
+<a href="{{ sub_dir }}/medium/{{ base }}" title="{{ base_no_ext }}"> 
+        <img src="{{ sub_dir }}/small/{{ base }}" width="200" /> 
+</a>
 
+    {% endcomment %}
     {% endif %}
   {% endif %}
 {% endfor %}
