@@ -19,6 +19,13 @@ outlets.
   Issue](http://flyboys.com.au/flyboys/docs/pdf/RCMNewsFlyboysSpecialEditionFreeDigital.pdf)
   features an article on his Fokker D.V11 in the "Scale Matters" column.
 
+- The [RCM News](https://rcmnews.com) magazine, issue 151, has an informative report on the [October
+  2018 Air Race event held at
+  NAAS](http://www.naas.org.au/past-events/Air-Race/2018/index-year.html).
+  Kudos to the author Byron Sympson. The issue can be downloaded for free as a
+  [PDF](https://rcmnews.com/rcmnews/docs/pdf/RCMNews151.pdf).
+
+
 
 **Please let the [webmaster]({% link club/contact.md %}) know of additional
    reports.**
