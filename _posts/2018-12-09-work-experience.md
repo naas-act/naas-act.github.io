@@ -20,5 +20,5 @@ The following pictures give some impressions of what the week was like.
 ![WEX5]({% link /img/medium/DSCF3464.jpg %}){:width="500px"}
 ![WEX6]({% link /img/medium/DSCF3467.jpg %}){:width="500px"}
 ![WEX7]({% link /img/medium/DSCF3469.jpg %}){:width="500px"}
-![WEX8]({% link /img/Resized_20181208_175310_5268.jpg %}){:width="500px"}
+![WEX8]({% link /img/medium/Resized_20181208_175310_5268.jpg %}){:width="500px"}
 
