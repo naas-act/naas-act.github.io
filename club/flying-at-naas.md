@@ -1,12 +1,14 @@
 ---
 title: Flying at NAAS
+hero: /assets/sopwith.jpg
 ---
 
 ### Time to fly
 
-We are Flying most weekends from around 9:00am til 3:00pm depending on the weather.
+We are flying most weekends from around 9:00am until 3:00pm depending on the weather.
 
-Flying also during week day depending on who is free.
+Flying may also be on during week day, depending on who is free. Some members
+frequently fly after work. Our field is flyable until sunset.
 
 NAAS holds several major events during each year.
 
@@ -37,5 +39,5 @@ We ask them to stay in the visitor area and see a club member for safety precaut
 - Members of the general public: up to four flights under instruction from a NAAS member before
   becoming a member. 
 
-- Other visitors must have current MAAA affiliation. Fee $10 per day.
+- Other visitors must have current MAAA affiliation. <!-- Fee $10 per day. -->
 

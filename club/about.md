@@ -1,5 +1,6 @@
 ---
 title: About
+hero: /assets/home-default-hero-right-alt.jpg
 ---
 
 The **National Aeromodelling and Aviators Society**, N.A.A.S.,
