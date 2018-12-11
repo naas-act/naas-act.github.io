@@ -6,7 +6,7 @@ NAAS member Marius B successfully completed a work experience week with [Merimbu
 Aircraft Maintenance](https://www.facebook.com/MerimbulaAircraftMaintenance/).
 In a sense, this was a step up from the model airplanes Marius puts together
 throughout the year. He was somewhat surprised to learn that, at times, these
-full-size planes are much more fiddly than expected!
+full-size planes are much more fiddly than model airplanes!
 
 A big thanks to Rex, the owner, for hosting Marius so excellently and giving
 him a gentle introduction into the wonderful world of work.
