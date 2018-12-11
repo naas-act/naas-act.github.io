@@ -10,7 +10,8 @@ success. Everyone enjoyed the homemade food while chatting about
 flying, planes, and everything else. 
 
 The field and facilities are excellent, and we were given ample opportunity to
-join in for some flying fun.
+join in for some flying fun. Special thanks to Wes for the heavy-model
+certification of our new Extreme Flight Laser 91.
 
 It can't be any better! Many thanks for having us.
 
