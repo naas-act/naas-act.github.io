@@ -2,8 +2,6 @@
 title: Contact
 ---
 
-**John Armarego** (President) Ph: 0416 015 712
-
 **Keir Melpas** (Secretary) Ph: 0123 456 789
 
 #### Email
