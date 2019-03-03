@@ -1,5 +1,5 @@
-- title: Upcoming Events
-  url: /upcoming-events.html
+# - title: Upcoming Events
+#   url: /upcoming-events.html
 - title: Club
   sublinks:
     - title: About
