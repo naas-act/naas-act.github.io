@@ -2,7 +2,7 @@
 title: Contact
 ---
 
-**Keir Melpas** (Secretary) Ph: 0123 456 789
+**Keir Melpas** (Secretary) Ph: 0419 268 465
 
 #### Email
 - [naasact@outlook.com](mailto:naasact@outlook.com) (General)
@@ -10,9 +10,9 @@ title: Contact
 
 #### Postal Address
 
-National Aeromodelling and Aviators Society  
-Po Box  2030  
-**Kambah 2902 ACT**
+National Aeromodelling and Aviators Society
+17 Southwood Retreat
+**Bonython ACT 2905**
 
 
                   
