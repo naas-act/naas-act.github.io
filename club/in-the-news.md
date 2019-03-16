@@ -33,7 +33,7 @@ Click
 to read it.
 
 
-**Please let the [webmaster]({% link club/contact.md %}) know of additional
+**Please let the [webmaster]({% link club/committee.md %}) know of additional
    reports.**
 
 	

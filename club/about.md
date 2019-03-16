@@ -4,23 +4,17 @@ hero: /assets/home-default-hero-right-alt.jpg
 ---
 
 The **National Aeromodelling and Aviators Society**, N.A.A.S.,
-is a remote control model aircraft club and facility located in the beautiful   
+is a remote control model aircraft club and facility located in the beautiful
 N.A.A.S. valley in the Namadgi National park in Canberra A.C.T Australia.
 N.A.A.S. was founded in 2013.
 
 Our main goal has always been to ensure that our field facilities provide the
 best opportunities for the enjoyment and safe flying of larger scale aircraft
 and special interest groups. This is achieved through a strong community of
-like minded, enthusiastic, skilled and energetic group of members:
+like minded, enthusiastic, skilled and energetic group of members. 
+We nurture a variety of passions in the hobby, such as:
 
-- N.A.A.S. is about people, young and old, and their beautiful flying machines.
-- N.A.A.S. is about friendships, team work, supporting community and good times.
-- N.A.A.S. is about enjoyment, passion, commitment, aptitude, skill, knowledge and experience.
-
-Our members are a dedicated and focused group of extremely active aeromodellers ranging in age from 10 years up to over 70 year of age.
-They nurture a variety of passions in the hobby, such as:
-
-- Scale models: building (from scratch) and flying, predominantly WW1
+- Scale models: building (from scratch) and flying
 - Aerobatics: IMAC and 3D
 - Gliders and gliding
 - ARFs and recreational ("sport") flying 

@@ -10,23 +10,21 @@ We are flying most weekends from around 9:00am until 3:00pm depending on the wea
 Flying may also be on during week day, depending on who is free. Some members
 frequently fly after work. Our field is flyable until sunset.
 
-NAAS holds several major events during each year.
-
-
 ### Rules
 
-All flying at the NAAS facilities are bound by the N.A.A.S rules and by-laws.
+All flying at the NAAS facilities are bound by the rules in the [NAAS procedures](/assets/NAAS-Procedures.pdf) and by-laws.
 
-NAAS is associated with the MAAA and all MAAA procedures and policies are to be followed.
-
-At the NAAS facilities the operation of all model aircraft is subject to the requirements of the MAAA Manual of Procedures as well as CAR Part 101.
+NAAS is associated with the MAAA and, hence, all [MAAA procedures and
+policies](https://www.maaa.asn.au/club-support/maaa-documents) are to be
+followed. Likewise, all operation of model airplanes at our field is subject to the
+[CASR Part 101
+regulation](https://www.casa.gov.au/standard-page/casr-part-101-unmanned-aircraft-and-rocket-operations)
+on unmanned aircraft and rockets.
 
 The individual operator of a model aircraft is responsible for his/her
-compliance, and his/her model’s compliance with CAR Part 101 and also with all
-MAAA rules as required by the MAAA Manual of Procedures.
+compliance, and his/her model’s compliance with the above regulations.
 
 Flying at NAAS is **not** bound to a 400ft ceiling like at most other clubs.
-
 
 ### Spectators
 
@@ -35,9 +33,8 @@ We ask them to stay in the visitor area and see a club member for safety precaut
 
 ### Flying Visitors
 
-
 - Members of the general public: up to four flights under instruction from a NAAS member before
   becoming a member. 
 
-- Other visitors must have current MAAA affiliation. <!-- Fee $10 per day. -->
+- Other flying visitors must have current MAAA affiliation.
 
