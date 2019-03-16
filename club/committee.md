@@ -4,7 +4,7 @@ title: Committee and Contact
 
 ### Office Bearers
 
-**President** - Stuart Jones  
+**President** - Stuart Jones (ph: 0429 448 044)  
 **Vice President** - Jerry Herron  
 **Treasurer** - David Barwick  
 **Secretary** - Keir Malpas  
