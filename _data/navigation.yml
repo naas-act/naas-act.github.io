@@ -4,22 +4,26 @@
   sublinks:
     - title: About
       url: /club/about.html
-    - title: Flying at NAAS
-      url: /club/flying-at-naas.html
-    - title: Field Location
-      url: /club/field-location.html
-    - title: In the News
-      url: /club/in-the-news.html
     - title: Committee and Contact
       url: /club/committee.html
-    - title: Documents
-      url: /club/documents.html
+#   - title: Documents
+#     url: /club/documents.html
+    - title: Members Only Area
+      url: /club/members-only/index_encrypted.html
+- title: Field
+  sublinks:
+    - title: Flying at NAAS
+      url: /field/flying-at-naas.html
+    - title: Field Location
+      url: /field/field-location.html
 - title: Gallery
   sublinks:
     - title: Past Events
       url: /past-events/index.html
     - title: Videos 
       url: /gallery/videos.html
+    - title: In the News
+      url: /gallery/in-the-news.html
     - title: Miscellaneous
       url: /gallery/miscelllaneous.html
 - title: News

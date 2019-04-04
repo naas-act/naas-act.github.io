@@ -42,4 +42,4 @@ was granted 2428 hectares of land on a
 The area is now mostly part of [Namadgi National Park](http://en.wikipedia.org/wiki/Namadgi_National_Park).
 
 #### View of the field from the air
-![Map]({% link club/from-the-air.jpg %})
+![Map]({% link field/from-the-air.jpg %})
