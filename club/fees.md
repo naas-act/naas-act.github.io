@@ -15,8 +15,9 @@ information on newcomers and flying visitors.
 Our financial year is from July 1st to June 30th the following year.
 
 ### One Time Joining Fee
-- Individuals and Families: $180 
-- Indiviudals under 18 years of age: $50
+- Individuals and Families where membership is sponsored by a club member: $180
+- Individuals and Families on a probationary basis: $45 per year, over four years
+- Individuals under 18 years of age: $50
 
 ### Full Membership
 _Full membership_ is intended for individuals with NAAS as their primary or only

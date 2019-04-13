@@ -69,6 +69,45 @@ layout: default
 
     </div>
     <div class="col-md-5">
+      
+      <div class="card">
+	<img class="card-img-top" src="/assets/under-new-management.png" width="400" alt="Under new management">
+	<div class="card-body">
+	  <!-- <h3 class="card-title">New Committee</h3> -->
+	  &nbsp;<br>
+	  <p class="card-text">
+	    <strong>President</strong> - Stuart Jones
+	    &nbsp;&nbsp;&nbsp;
+	    <strong>Vice President</strong> - Jerry Herron<br>
+	    <strong>Treasurer</strong> - David Barwick
+	    &nbsp;&nbsp;&nbsp;
+	    <strong>Secretary</strong> - Keir Malpas<br>
+	    <strong>Field  Officer</strong> - David Twiss
+	  </p>
+	  <a href="/club/committee.html" class="btn btn-primary">New Committee and Contact</a>
+	</div>
+      </div>
+
+
+      <div class="card">
+	<img class="card-img-top" src="/assets/join-us-now.gif" height="150" alt="Join us now">
+	<div class="card-body">
+	  <h3 class="card-title">Why Join?</h3>
+	  <p class="card-text">
+	    <ul>
+	      <li><a href="/field/field-location.html">Excellent field</a>:
+		big space, no fences, 
+		aligned with prevailing wind
+	      <li>Fly high - No 400ft flying limit
+	      <li>Reduced <a href="/club/fees.html">joining fee</a>
+	    </ul>
+	  </p>
+	</div>
+      </div>
+
+
+      
+{% comment %}
       <!-- Next event - first we try to see if there is a poster -->
       {% if next-event-post.flyer %}
       <a href="{{ next-event-post.url }}">
@@ -78,6 +117,7 @@ layout: default
       {% else %}
       <img src="assets/home-default-hero-right.jpg" alt="" class="img-responsive">
       {% endif %}
+{% endcomment %}
 
     </div>
   </div>
