@@ -1,5 +1,5 @@
 ---
-title: "NAAS Club Member obtains Gold Wings"
+title: "NAAS Club Member David Barwick obtains Gold Wings"
 ---
 
 On April 20, 2019, David Barwick successfully passed his MAAA Gold Wings
