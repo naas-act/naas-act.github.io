@@ -2,8 +2,12 @@
 title: Joining and Fee Structure
 ---
 
+
 NAAS is open to new members, no matter if you are a newcomer to the hobby or a
 seasoned flyer and/or builder. 
+
+**However, for the time being, NAAS club membership is frozen until we have a field to
+fly again.**
 
 Please feel free to contact the
 president or the secretary to arrange a meeting at the field or for more
@@ -38,3 +42,4 @@ are already MAAA members.
 
 Fee structure: To be announced
 
+[NAAS Membership Form]({% link assets/NAAS-2019-20-membership-form.xlsx %})
